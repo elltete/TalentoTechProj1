@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font);
+}
+
+:root {
+  --primary-color: #4a5915;
+  --secondary-color: #4ebfd9;
+  --third-color: #d9c359;
+  --forth-color: #a2a632;
+  --fifth-color: #a66832;
+  --primary-font: Verdana, Geneva, Tahoma, sans-serif;
+  --secondary-font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 90px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+section {
+  padding: 30px;
+}
+
+main {
+  background-image: url("../assets/img/grass_theme2.jpg");
+  background-size: contain;
+}
+
+#inicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url("../assets/img/hitGolf.png");
+  background-size: 60px;
+  background-size: cover;
+  height: 100vh;
+}
+
+.inicio-imagen img {
+  width: 500px;
+  border-radius: 40px;
+}
+
+.inicio-descripcion h1 {
+  font-size: 50px;
+  padding: 30px;
+  font-family: var(--primary-font);
+}
+
+.inicio-descripcion p {
+  font-family: var(--secondary-font);
+  font-size: 25px;
+  color: var(--fifth-color);
+  padding: 20px;
+  margin-right: 400px;
+  text-align: justify;
+}
+
+#categorias,
+#torneos,
+#contacto {
+  text-align: center;
+  padding: 20px;
+  min-height: 50vh;
+}
+
+#categorias h2,
+#torneos h2,
+#contacto h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: var(--primary-font);
+}
+
+#categorias .container-grid-categorias,
+#torneos .container-grid-torneos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 40px;
+}
+
+#categorias .card-categoria,
+#torneos .card-torneo {
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s transform;
+}
+
+#torneos img {
+  border-radius: 15px;
+  height: 200px;
+}
+
+#categorias img {
+  height: 200px;
+}
+
+#categorias .card-categoria:hover,
+#torneos .card-torneo:hover {
+  transform: scale(1.03);
+}
+
+#torneos .card-torneo a {
+  text-decoration: none;
+  border: 1px solid var(--primary-color);
+  padding: 5px 10px;
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  background-color: var(--primary-color);
+  color: var(--third-color);
+  opacity: 0.8;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 15px;
+}
+
+#education {
+  background-color: azure;
+}
+
+#education .card {
+  background-color: white;
+}
+
+form {
+  width: 20%;
+  margin: auto;
+}
+
+form * {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+}
+
+form input,
+textarea {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+form button {
+  background-color: var(--primary-color); /* Green */
+  border: none;
+  color: var(--third-color);
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.8;
+  cursor: pointer;
+  width: 100px;
+}
+
+form button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.whatsapp i {
+  color: green;
+  font-size: 80px;
+  background-color: white;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 10px;
+}
+
+.contacto-email-telefono {
+  font-size: 20px;
+  position: relative;
+}
+
+.contacto-email-telefono a {
+  font-size: 15px;
+}
+
+.contacto-email-telefono a:link {
+  text-decoration: none;
+}
+
+.contacto-email-telefono a:visited {
+  text-decoration: none;
+}
+
+.contacto-email-telefono a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: white;
+  text-align: center;
+  size: 5px;
+}
+
+footer p {
+  font-size: 10px;
+}
+
+.separador {
+  width: 0;
+  height: 0;
+  background: var(--primary-color);
+  border-right: 100vw solid transparent;
+  border-bottom: 10vw solid transparent;
+  margin-top: -8vw;
+}
+
+@media (max-width: 880px) {
+  #inicio {
+    flex-direction: column;
+  }
+
+  .inicio-descripcion p {
+    margin-right: 0px;
+  }
+
+  #categorias .container-grid-categorias,
+  #torneos .container-grid-torneos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .inicio-imagen img {
+    width: 400px;
+    margin: auto;
+  }
+
+  .separador {
+    margin-top: -15vw;
+  }
+}
+
+@media (max-width: 480px) {
+  #categorias .container-grid-categorias,
+  #torneos .container-grid-torneos  {
+    grid-template-columns: 1fr;
+  }
+
+  .inicio-imagen img {
+    width: 300px;
+    margin: auto;
+  }
+
+  .separador {
+    margin-top: -30vw;
+  }
+
+}
