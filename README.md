@@ -13,6 +13,6 @@ Por ultimo tiene una seccion de contacto, el cual se puede enviar un mesaje a tr
 
 Repositorio GitHub: (blank:#https://github.com/elltete/TalentoTechProj1.git)
 
-Deploy: (blank:#https://)
+Deploy: (blank:#https://torneodegolf.netlify.app)
 
 eMail: <diegoponzo@gmail.com>
